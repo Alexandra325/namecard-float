@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  
+}
+.profile-card {
+  width: 40rem;
+  max-width: calc(100vw - 5%);
+  background-color: hsla(300, 100%, 90%, .4);
+  border-radius: 6.25rem;
+  box-shadow: hsla(0, 0%, 0%, .5) 0.625rem 0.625rem 5rem;
+  position: relative;
+}
+.profile-card::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(assets/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.head, .links {
+  text-align: center; 
+}
+.head, .content {
+  width: 90%;
+  margin: 20%; 
+}
+img {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 80%;
+  padding: 0.063rem;
+  background-color: grey;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(100%);
+  margin-bottom: 1.25rem;
+  
+}
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+}
+.profile-image {
+  margin: 4rem 5rem 1rem 4.5rem;
+  position: absolute;
+  left: .625rem;
+  top: 0;
+}
+ul {
+  list-style-type: none;
+  margin-top: .625rem;
+}
+  li {
+  display: inline;
+}
+.head, .about {
+  margin: 2% 15%;
+  font-family: 'Apple Chancery', cursive;
+  color: #47476b;
+}
+.content {
+  padding: 0 10%;
+  
+}
+.content about {
+  position: absolute;
+  top: 0;
+  right: .625rem;
+  margin: 3rem 6rem 6rem 2rem;
+  font-size: .875rem;
+}
+p {
+  margin-bottom: 0.5rem;
+}
+.links {
+  margin: 3rem 2.5rem 7rem 5.5rem;
+  position: absolute;
+  bottom: 0;
+  left: .625rem;
+  color: #47476b;
+  font-family: 'Apple Chancery', cursive;  
+  font-size: .9rem;
+  line-height: 1.5rem; 
+}
+a {
+  color: darkslategray;
+}
+.name-headline {
+  color: #47476b;
+  line-height: 1rem;
+  font-size: .95rem;
+  position: absolute;
+  left: .625rem;
+  bottom: 0;
+  margin: 0 3rem 12rem 3rem;
+}
+
+
